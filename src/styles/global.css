@@ -3,8 +3,22 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+
+@font-face {
+    font-family: Minipax;
+    src: url(/public/Minipax-Regular.woff);
+}
+
+@font-face {
+    font-family: Avara-bold;
+    src: url(/public/Avara-Bold.woff);
+}
+
+p { 
+	font-family: Minipax;
+	font-size: 16px;
+}
 body {
-	font-family: Verdana, sans-serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 65ch;
@@ -12,18 +26,16 @@ body {
 	background-color: #fff;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	line-height: 1.5;
+	line-height: 1.8;
 	color: #444;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+h1, h2, h3, h4, h5, h6 {
+	font-family: Avara-bold
+}
 strong,
 b {
 	color: #222;
+	font-family: Avara-bold;
 }
 a {
 	color: #3273dc;
@@ -33,10 +45,10 @@ nav a {
 }
 textarea {
 	width: 100%;
-	font-size: 16px;
+	font-size: 24px;
 }
 input {
-	font-size: 16px;
+	font-size: 24px;
 }
 content {
 	line-height: 1.6;
